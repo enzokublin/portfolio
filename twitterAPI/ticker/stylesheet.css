@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#headlines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    font-family: "Calibri";
+    font-weight: bold;
+    /*border: 1px solid black;*/
+    padding: 20px;
+    white-space: nowrap;
+}
+
+#headlines a {
+    padding-right: 30px;
+    color: rgb(239, 246, 244);
+}
+
+#box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    border-bottom: 1px rgb(12, 106, 73) solid;
+    background-color: rgb(13, 154, 214);
+    box-shadow: 2px 2px;
+}

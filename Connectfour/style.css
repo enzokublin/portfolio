@@ -1,0 +1,184 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+/*##################################################################################################  */
+
+header {
+    background-color: rgb(138, 138, 140);
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    margin: 0px;
+    padding: 5px 0px 7px 0px;
+    width: 160px;
+    height: 20px;
+    background-color: rgb(26, 97, 150);
+    color: rgb(240, 231, 231);
+    text-align: center;
+    font-size: 20px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: -2px 2px;
+}
+
+.hippoClass {
+    animation-name: hippo;
+    animation-duration: 10s;
+}
+
+@keyframes hippo {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+#redCoin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(179, 33, 12);
+    margin: 5px 0px 8px 0px;
+    box-shadow: 2px 2px;
+    /* animation-name: great;
+    animation-duration: 5s; */
+}
+
+.greatClass {
+    animation-name: great;
+    animation-duration: 15s;
+}
+
+@keyframes great {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dot1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(232, 55, 14);
+    margin: 5px;
+    box-shadow: 2px 2px;
+    /* animation-name: great;
+    animation-duration: 10s; */
+}
+
+#yellowCoin {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(185, 155, 45);
+    margin: 5px 0px 8px 0px;
+    box-shadow: 2px 2px;
+    /* animation-name: great;
+    animation-duration: 5s; */
+}
+
+.dot2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(191, 186, 16);
+    margin: 5px;
+    box-shadow: 2px 2px;
+    /* animation-name: great;
+    animation-duration: 10s; */
+}
+
+button {
+    background-color: rgb(26, 97, 150);
+    color: white;
+    width: 140px;
+    height: 34px;
+    margin: 0px 0px 3px 0px;
+    padding: 0px;
+    box-shadow: 2px 2px;
+    border: 1px solid rgb(26, 97, 150);
+    border-radius: 25px 25px 25px 25px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*##################################################################################################  */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(14, 95, 122);
+    justify-items: center;
+    align-items: center;
+    height: 480px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    background-color: rgb(162, 171, 170);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    margin: 7px 0px;
+    box-shadow: -2px -2px;
+    border: 1px solid rgb(251, 252, 252);
+}
+
+.chips {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 5px;
+    box-shadow: -2px -2px;
+}
+
+.gamer1 {
+    background-color: rgb(138, 12, 12);
+}
+
+.gamer2 {
+    background-color: rgb(191, 195, 0);
+}
+
+.champion {
+    width: 250px;
+    height: 250px;
+}
+/*################################################################*/
+
+footer {
+    background-color: rgb(138, 138, 140);
+    /* width: 100%; */
+    height: 20px;
+    margin: 0px;
+    padding: 5px;
+}

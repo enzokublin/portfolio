@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#headline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    font-family: "Calibri";
+    font-weight: bold;
+    /*border: 1px solid black;*/
+    padding: 20px;
+    white-space: nowrap;
+}
+
+#headline a {
+    padding-right: 30px;
+}
+
+#box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 50px;
+    border-bottom: 1px tomato solid;
+}

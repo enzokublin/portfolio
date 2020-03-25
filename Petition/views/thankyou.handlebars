@@ -1,0 +1,14 @@
+<div class="view">
+    <form id="deleteSign" action="/deleteSignature" method="post">
+        <button id="withdrawSign">Withdraw Your Signature</button>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    </form>
+    <h2 id="thankYou">{{ message }}</h2>
+    {{>petContainer}}
+    <img id="signImg" src="{{signed}}" alt="signature">
+    <p id="pthanks">
+        <a id="athanks" href="/signerlist">In case you wonder who else signed it, see all {{signersCount}} signers here:</a>
+    </p>
+
+
+</div>

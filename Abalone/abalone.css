@@ -1,0 +1,574 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("images/table.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primary-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.marbles {
+}
+
+/*#############################################################  */
+/*#############################################################  */
+/*#############################################################  */
+
+#main-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    width: 260px;
+    height: 530px;
+    margin: 0px 0px 0px 0px;
+    /* background-color: rgb(11, 96, 152); */
+    /* color: rgb(228, 234, 240); */
+    /* border: 2px solid rgb(126, 175, 45); */
+    border-radius: 8px;
+    order: -1;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(228, 234, 240);
+    /* background-color: rgb(126, 175, 45); */
+    width: 220px;
+    height: 40px;
+    padding: 14px 10px 2px 10px;
+    margin: 25px 0px 0px 0px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+i.fas.fa-bowling-ball {
+    font-size: 45px;
+    color: rgb(228, 234, 240);
+    text-shadow: -1 -1 20px rgba(0, 0, 0, 1);
+}
+
+/* ########################################################################## */
+/* ########################################################################## */
+/* ########################################################################## */
+
+#rules-container {
+    display: flex;
+    /* justify-content: center; */
+    flex-flow: column wrap;
+    width: 320px;
+    /* height: 485px; */
+    margin: 0px 0px 0px 0px;
+    /* border: 2px solid rgb(126, 175, 45); */
+    border-radius: 8px;
+    order: -1;
+}
+
+#rules-container h3 {
+    width: 310px;
+    height: 20px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    color: rgb(228, 234, 240);
+    padding: 7px 6px 8px 6px;
+    margin: 25px 0px 20px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#top-rule-p {
+    width: 300px;
+    height: 130px;
+    text-align: justify;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    color: rgb(228, 234, 240);
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 20px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#middle-rule-p {
+    width: 300px;
+    height: 110px;
+    text-align: justify;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    color: rgb(228, 234, 240);
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 20px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#bottom-rule-p {
+    width: 300px;
+    height: 110px;
+    text-align: justify;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    color: rgb(228, 234, 240);
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+/* ########################################################################## */
+/* ########################################################################## */
+/* ########################################################################## */
+
+/* i.fas.fa-arrow-up {
+    font-size: 35px;
+    color: rgb(228, 234, 240);
+    text-shadow: -1 -1 20px rgba(0, 0, 0, 1);
+    position: absolute;
+}
+
+i.fas.fa-arrow-down {
+    font-size: 35px;
+    color: rgb(228, 234, 240);
+    text-shadow: -1 -1 20px rgba(0, 0, 0, 1);
+    position: absolute;
+}
+
+i.fas.fa-arrow-right {
+    font-size: 35px;
+    color: rgb(228, 234, 240);
+    text-shadow: -1 -1 20px rgba(0, 0, 0, 1);
+    position: absolute;
+}
+
+i.fas.fa-arrow-left {
+    font-size: 35px;
+    color: rgb(228, 234, 240);
+    text-shadow: -1 -1 20px rgba(0, 0, 0, 1);
+    position: absolute;
+} */
+
+/* ########################################################################## */
+/* ########################################################################## */
+/* ########################################################################## */
+
+#player-box-I {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    color: rgb(228, 234, 240);
+    margin: 70px 0px 25px 0px;
+    width: 240px;
+}
+
+#player-box-I h3 {
+    width: 110px;
+    height: 22px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    color: rgb(228, 234, 240);
+    background-color: rgb(108, 16, 16);
+    padding: 7px 0px 8px 0px;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#counter-player-I {
+    width: 110px;
+    height: 29px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    color: rgb(228, 234, 240);
+    background-color: rgb(108, 16, 16);
+    padding: 6px 0px 2px 0px;
+    margin: 0px 0px 0px 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#player-1-box {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(108, 16, 16);
+    padding: 30px 44px 42px 29px;
+    margin: 15px 5px 0px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#directions-player-I {
+    width: 103px;
+    height: 89px;
+    background-color: rgb(108, 16, 16);
+    padding: 10px 0px 0px 0px;
+    margin: 15px 0px 0px 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+    text-align: center;
+}
+/* ########################################################################## */
+/* ########################################################################## */
+/* ########################################################################## */
+
+#player-box-II {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    color: rgb(228, 234, 240);
+    margin: 50px 0px 0px 0px;
+    width: 240px;
+}
+
+#player-box-II h3 {
+    width: 110px;
+    height: 22px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    color: rgb(228, 234, 240);
+    background-color: rgb(6, 35, 92);
+    padding: 7px 0px 8px 0px;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#counter-player-II {
+    width: 110px;
+    height: 29px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    color: rgb(228, 234, 240);
+    background-color: rgb(6, 35, 92);
+    padding: 6px 0px 2px 0px;
+    margin: 0px 0px 0px 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#player-2-box {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(6, 35, 92);
+    padding: 30px 44px 42px 29px;
+    margin: 15px 5px 0px 0px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+}
+
+#directions-player-II {
+    width: 103px;
+    height: 89px;
+    background-color: rgb(6, 35, 92);
+    padding: 10px 0px 0px 0px;
+    margin: 15px 0px 0px 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    border-radius: 8px;
+    text-align: center;
+}
+/* ############################################################# */
+/* ############################################################# */
+/* ############################################################# */
+
+#main-container {
+    display: flex;
+    flex-flow: column wrap;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin: 8px 0px 8px 0px;
+}
+
+/* ############################################################ */
+/* ############################################################ */
+/* ############################################################ */
+
+.lineOne {
+    text-align: center;
+    /* background-color: rgb(17, 145, 186); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.lineTwo {
+    /* background-color: rgb(126, 175, 45); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.lineThree {
+    /* background-color: rgb(212, 23, 23); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.lineFour {
+    /* background-color: rgb(91, 99, 142); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.lineFive {
+    /* background-color: rgb(11, 71, 163); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.lineSix {
+    /* background-color: rgb(209, 201, 27); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.lineSeven {
+    /* background-color: rgb(126, 175, 45); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.lineEight {
+    /* background-color: rgb(166, 24, 199); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px;
+    text-align: center;
+}
+
+.lineNine {
+    /* background-color: rgb(4, 111, 157); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+/* ############################################################ */
+/* ############################################################ */
+/* ############################################################ */
+
+.circle-line-one {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+.circle-line-two {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+.circle-line-three {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+.circle-line-four {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+.circle-line-five {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+.circle-line-six {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+.circle-line-seven {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+.circle-line-eight {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+.circle-line-nine {
+    width: 30px;
+    height: 30px;
+    color: rgb(228, 234, 240);
+    margin: 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    /* border: 2px solid rgba(0, 0, 0, 1); */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    /* background-color: rgb(228, 234, 240); */
+}
+
+/* ############################################################ */
+/* ############################################################ */
+/* ############################################################ */
+
+.player-1 {
+    background-color: rgb(108, 16, 16);
+    color: rgb(228, 234, 240);
+}
+
+.player-2 {
+    background-color: rgb(6, 35, 92);
+    color: rgb(228, 234, 240);
+}
+
+/* ############################################################ */
+/* ############################################################ */
+/* ############################################################ */
+
+.line-ten {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.line-zero {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.out {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 5px 9px;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.out-bottom {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px 0px 10px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 50%;
+}
+
+.outline-right {
+    width: 30px;
+    height: 30px;
+    margin: 0px 0px;
+    padding: 0px 10px 0px 5px;
+    border-radius: 50%;
+}
+
+.outline-left {
+    width: 30px;
+    height: 30px;
+    margin: 0px 13px;
+    padding: 0px 5px 0px 5px;
+    border-radius: 50%;
+}
+
+i.far.fa-grimace {
+    font-size: 45px;
+    color: rgb(70, 73, 75);
+    text-shadow: 0.5 0.5 20px rgb(228, 234, 240);
+}

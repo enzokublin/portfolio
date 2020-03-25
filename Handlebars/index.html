@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Handlebars</title>
+    <link rel="stylesheet" href="exerciseday17.css">
+</head>
+
+<body>
+    <header>
+        <h1>Famouse Authors</h1>
+    </header>
+    <main>
+        <div id="literature-box"></div>
+    </main>
+    <script id="literature" type="text/x-handlebars-template">
+
+                <ul class="authors">
+                    {{#authors}}
+                    <ul class="author">
+                        <il>{{name}}</il>
+                        <il>{{born}}</il>
+                        <il>{{died}}</il>
+                    </ul>
+                    <ul class="selectedWritings">
+                        {{#selectedWritings}}
+                        <li>
+                            {{.}}
+                        </li>
+                        {{/selectedWritings}}
+                    </ul>
+                    <ul class="quoteAndPhoto">
+                        <li>
+                            {{quote}}
+                        </li>
+                        <li>
+                            {{photo}}
+                        </li>
+                    </ul>
+                    {{/authors}}
+                </ul>
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="exerciseday17.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<div class="view">
+
+    <p id=pSignature>Sign my petition to make the wearing of sandals in combination with socks in public a criminal act in every possible jurisdiction! </p>
+
+    {{>petContainer}}
+    <!-- <p id="errorMessage">{{errorMessage}}</p> -->
+    <form method="POST">
+
+        {{#if error}}
+        <div class="error">Oh boy, something went wrong. Please repeat the login procedere!</div>
+        {{/if}}
+
+        <input id="sign" type="hidden" name="signature" value="">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+        <div id="sketch">
+            <canvas id="paint" width= "500px" height = "65px">Sign Here</canvas>
+        </div>
+
+        <button id="submitSign">Submit</button>
+
+</form>
+</div>

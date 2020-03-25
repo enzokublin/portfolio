@@ -1,0 +1,28 @@
+<div class="view">
+
+    {{>petContainer}}
+    <h2 id="updateProfile">Change your profile information here if you like.</h2>
+
+    <form id="update" method="post">
+        <div class="inputFields">
+            First Name:<input id="updateFirst" type="text" name="firstname" value="">
+            Last Name:<input id="updateLast" type="text" name="lastname" value="">
+        </div>
+        <div class="inputFields">
+            E-Mail:<input id="updateEmail" type="email" name="email" value="">
+            Password:<input id="updatePw" type="password" name="password" value="">
+        </div>
+        <div class="inputFields">
+            Age:<input id="updateAge" type="text" name="age" value="">
+            City:<input id="updateCity" type="text" name="city" value="">
+        </div>
+        <div class="inputFields">
+            Homepage:<input id="updateHomepage" type="text" name="homepage" value="">
+            <button id="updateButton">Update</button>
+        </div>
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+
+    </form>
+
+
+</div>

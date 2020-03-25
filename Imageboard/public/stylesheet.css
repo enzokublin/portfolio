@@ -1,0 +1,244 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(105, 134, 142);
+    font-family: sans-serif;
+    color: rgb(227, 225, 230);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-auto-flow: column;
+}
+
+header {
+    margin: 0px;
+    background-color: rgb(143, 164, 38);
+    grid-column: 1/ 10 span;
+    grid-row: 1/ 1 span;
+    border-bottom: 2px solid rgb(242, 234, 239);
+    box-shadow: 2px 2px;
+}
+
+.getmore {
+    height: 30px;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid;
+    color: rgb(236, 245, 247);
+    background-color: rgb(143, 164, 38);
+    margin: 28px 38px;
+    align-self: flex-start;
+    order: 5;
+}
+
+p {
+    width: 400px;
+    margin: 15px 0px;
+    padding: 0px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 5px 0px 5px 15px;
+    width: 200px;
+    padding: 0px;
+    font-size: 48px;
+}
+
+.mainpage {
+    margin: 50px 0px 6px 14px;
+    color: rgb(178, 209, 23);
+}
+
+footer {
+    margin-top: 50px;
+    grid-column: 1/ 10 span;
+    grid-row: 10/ 10 span;
+    background-color: rgb(143, 164, 38);
+    border-top: 2px solid rgb(242, 234, 239);
+    box-shadow: 2px 2px;
+    /* height: 25px; */
+}
+
+input {
+    margin: 10px 5px 0px 5px;
+    padding: 0px;
+    height: 25px;
+    text-align: center;
+}
+
+#title {
+    margin-left: 2px;
+}
+
+.imagep {
+    margin: 15px 0px 0px 0px;
+    padding: 0px;
+}
+
+#main {
+    grid-column: 1/ 10 span;
+    grid-row: 1/ 10 span;
+    padding: 0px;
+    margin: 40px 0px 140px 0px;
+}
+
+.pictureInput {
+    margin: 0px;
+    padding: 0px 0px 0px 11px;
+}
+
+.imgBoard {
+    margin: 0px;
+    padding: 30px 0px 70px 0px;
+    grid-column: 1/ 10 span;
+    grid-row: 1/ 10 span;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imagebox {
+    margin: 0px;
+    padding: 0px;
+    width: 211px;
+}
+
+input[type="file" i] {
+    display: none;
+}
+
+.file-choose {
+    border: 1px solid;
+    display: inline-block;
+    padding: 4px 12px;
+    margin: 0px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(143, 164, 38);
+    font-family: sans-serif;
+}
+
+#upload {
+    height: 30px;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid;
+    color: rgb(236, 245, 247);
+    background-color: rgb(143, 164, 38);
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+}
+
+.image {
+    margin: 28px 0px 0px 14px;
+}
+
+.zoomin {
+    background-color: rgb(14, 54, 83);
+    border: 1px solid;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.primarycontainer {
+    background-color: rgb(96, 129, 121);
+    width: 90%;
+    height: 90%;
+    border: 1px solid;
+    padding: 0px 10px 15px 22px;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-around;
+}
+
+#commentsubmit {
+    height: 30px;
+    width: 150px;
+    border-radius: 20px 20px 20px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid;
+    color: rgb(236, 245, 247);
+    background-color: rgb(143, 164, 38);
+    margin: 20px 0px 5px 5px;
+}
+
+.commenter {
+    display: inline-block;
+    margin: 0px 0px 5px 10px;
+}
+
+.commentpost {
+    display: inline-block;
+    margin: 0px 0px 5px 10px;
+}
+
+.pcomment {
+    background-color: rgb(57, 107, 106);
+    width: 380px;
+    height: 36px;
+    border: 1px solid;
+    margin: 0px 0px 5px 0px;
+    padding: 10px 10px 15px 0px;
+    box-shadow: -1px -1px;
+    align-self: flex-start;
+}
+
+.largerheadline {
+    margin: 0px 400px 10px 0px;
+}
+
+i#exit.fas.fa-sign-out-alt {
+    width: 50px;
+    height: 50px;
+    color: rgb(178, 209, 23);
+    font-size: 40px;
+    margin: 8px 18px 0px 0px;
+    align-self: flex-end;
+}
+
+#zoominp {
+    margin: 10px 1px;
+}
+
+.commentssection {
+    margin: 5px 0px 16px 2px;
+    padding: 0px;
+}
+
+.commentfield {
+    margin: 0px;
+    padding: 0px;
+    width: 346px;
+}
+
+.commentinput {
+    margin: 3px;
+    padding: 0px;
+}
+
+.usercomment {
+    margin: 0px;
+    padding: 0px;
+}

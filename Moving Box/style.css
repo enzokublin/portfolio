@@ -1,0 +1,10 @@
+body {
+    margin: 0px;
+}
+
+#box1 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: blue;
+}

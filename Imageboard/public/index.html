@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Image Board SPA</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/x-icon" href="./picture-book.ico">
+</head>
+
+<body>
+    <header>
+        <h1>IMAGES</h1>
+    </header>
+
+    <div id="main">
+        <!-- ################################################################################## -->
+        <!-- ################################################################################## -->
+        <!-- ################################################################################## -->
+        <h2 class="mainpage">{{heading}}</h2>
+
+
+        <div class="pictureInput">
+            <input id="title" v-model="pictureToUpload.title" type="text" name="title" value="" placeholder="title">
+            <input v-model="pictureToUpload.desc" type="text" name="desc" value="" placeholder="description">
+            <input v-model="pictureToUpload.username" type="text" name="username" value="" placeholder="username">
+            <label for="choose" class="file-choose">
+                <i class="fa fa-cloud-upload"></i> Choose Image
+            </label>
+            <input id="choose" class="file" type="file" name="file" accept="image/*" @change="handleFileChange">
+            <button id="upload" @click="upload">Upload</button>
+        </div>
+
+        <div class="imgBoard">
+        <button class="getmore" @click="getMore">more</button>
+            <div class="imagebox" v-for="image in images" v-if="images.length" :key="image.id">
+                <div class="image">
+                    <img class="primaryPic" @click="zoomInToThePicture(image.id)" :src="image.url" :alt="image.title"></img>
+                    <p class="imagep" @click="zoomInToThePicture(image.id)">{{image.title}}</p>
+                </div>
+            </div>
+        </div>
+        <picture-modal class="picmodal" v-if="imageId" :id="imageId" @close="zoomOutOfThePicture"></picture-modal>
+    </div>
+
+
+    <script type="text/x-template" id="zoomin">
+        <div class="zoomin">
+            <div class="primarycontainer" v-for="image in pictureData" v-if="pictureData.length">
+                <i id="exit" @click="close" class="fas fa-sign-out-alt"></i>
+                    <h2 class="largerheadline">{{image.title}}</h2>
+
+                    <div class="picturebox">
+                        <img class="primepic" :src="image.url" :alt="image.title">
+                    </div>
+                    <p id="zoominp">
+                        Description: {{image.description}}<br>
+                        Posted by: {{image.username}}
+                    </p>
+                    <h2 class="commentssection">Here you can add comments.</h2>
+                    <div class="commentfield">
+                        <input class="commentinput" v-model="commentPosted.comments" type="text" name="comment" value="" placeholder="comment"/>
+                        <input class="usercomment" v-model="commentPosted.user" type="text" name="user" value="" placeholder="user"/>
+                        <button id="commentsubmit" @click="commentIsPosted">Submit</button>
+                    </div>
+                    <div class="commentbox">
+                        <p class="pcomment" v-for="comment in comments" v-if="comments.length" >
+                            <span class="commenter">Comment posted by:</span>&ensp; {{comment.username}}<br>
+                            <span class="commentpost">Comment:</span>&ensp;{{comment.comment}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+<footer></footer>
+
+
+    <script src="/js/vue.js"></script>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
+
+
+<!-- @mouseover="pickPictureOut" @mouseout="softPedalPicture" -->
+<!--class="imgBox"  -->

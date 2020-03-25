@@ -1,0 +1,353 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-color: rgba(164, 175, 181, 0.79); */
+    font-size: 20px;
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header {
+    background-color: rgb(90, 91, 92);
+    box-shadow: 0 0 20px rgba(5, 5, 5, 1);
+    display: flex;
+    justify-content: center;
+}
+
+#vue-app {
+    background-color: rgba(191, 193, 194, 0.79);
+    height: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+}
+
+#primary-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 5px 0px 0px 0px;
+}
+
+footer {
+    background-color: rgb(37, 112, 85);
+    box-shadow: 0 0 20px rgba(5, 5, 5, 1);
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(251, 245, 245);
+    background-color: rgb(37, 112, 85);
+    margin: 20px 20px 20px 30px;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+    border-radius: 8px;
+    padding: 1px 5px 12px 4px;
+    width: 576px;
+    border: 2px solid;
+    font-size: 30px;
+    height: 30px;
+}
+
+p {
+    color: rgb(255, 252, 253);
+    background-color: rgb(90, 91, 92);
+    text-shadow: 0 0 -8px rgba(251, 246, 246, 1);
+    box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+    text-align: center;
+    margin: 20px 20px 20px 29px;
+    padding: 12px 3px 10px 2px;
+    border-radius: 8px;
+    border: 2px solid;
+    width: 583px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+#camera-frame {
+    margin: 20px 20px 20px 12px;
+    text-align: center;
+    width: 100px;
+    padding: 10px 5px;
+    background-color: rgba(14, 106, 152, 0.79);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+}
+
+i.fas.fa-camera {
+    font-size: 30px;
+    background-color: rgba(14, 106, 152, 0.79);
+    color: rgb(255, 252, 253);
+    border-radius: 20%;
+    margin: 0px;
+    text-shadow: 0 0 -5px rgba(251, 246, 246, 1);
+}
+
+i.fas.fa-map-marker-alt {
+    font-size: 30px;
+    background-color: rgba(14, 106, 152, 0.79);
+    color: rgb(255, 252, 253);
+    border-radius: 20%;
+    margin: 8px;
+    text-shadow: 0 0 -5px rgba(251, 246, 246, 1);
+}
+
+video {
+    margin: 0px 346px;
+    /* border: 2px solid rgb(37, 112, 85); */
+    /* box-shadow: 0 0 8px rgba(251, 246, 246, 1); */
+    width: 570px;
+    height: 269px;
+}
+
+/* #picture-box {
+    width: 570px;
+    height: 269px;
+} */
+
+#get-coordinates {
+    margin: 3px 20px 0px 15px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    padding: 4px 5px 0px 5px;
+    background-color: rgba(14, 106, 152, 0.79);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+}
+
+#canvas {
+    margin: 0px 338px;
+    /* border: 2px solid rgb(37, 112, 85); */
+    /* box-shadow: 0 0 8px rgba(251, 246, 246, 1); */
+    width: 570px;
+    height: 269px;
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 450px;
+    box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+    height: 50px;
+    margin: 10px 2px;
+    padding: 5px 5px 18px 10px;
+    border-radius: 8px;
+}
+
+input {
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+    height: 40px;
+    margin: 10px 5px 10px 5px;
+    padding: 5px 5px 0px 5px;
+    text-align: center;
+}
+
+#picture-taken {
+    margin: 5px 0px 5px 0px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+}
+
+#image-taken {
+    height: 30px;
+    margin: 5px 0px 5px 0px;
+    position: relative;
+    display: inline-block;
+}
+
+/* ####################################################### */
+/* ####################Media Queries ##################### */
+/* ####################################################### */
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        /* background-color: rgba(164, 175, 181, 0.79); */
+        font-size: 20px;
+        font-family: sans-serif;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    header {
+        background-color: rgb(90, 91, 92);
+        box-shadow: 0 0 20px rgba(5, 5, 5, 1);
+        display: flex;
+        justify-content: center;
+    }
+
+    #vue-app {
+        background-color: rgba(191, 193, 194, 0.79);
+        height: 455px;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 20px;
+    }
+
+    #primary-box {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        margin: 5px 0px 0px 0px;
+    }
+
+    footer {
+        background-color: rgb(37, 112, 85);
+        box-shadow: 0 0 20px rgba(5, 5, 5, 1);
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        color: rgb(251, 245, 245);
+        background-color: rgb(37, 112, 85);
+        margin: 20px 20px 20px 30px;
+        text-align: center;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+        box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+        border-radius: 8px;
+        padding: 1px 5px 12px 4px;
+        width: 576px;
+        border: 2px solid;
+        font-size: 30px;
+        height: 30px;
+    }
+
+    p {
+        color: rgb(255, 252, 253);
+        background-color: rgb(90, 91, 92);
+        text-shadow: 0 0 -8px rgba(251, 246, 246, 1);
+        box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+        text-align: center;
+        margin: 20px 20px 20px 21px;
+        padding: 12px 3px 10px 2px;
+        border-radius: 8px;
+        border: 2px solid;
+        width: 425px;
+        font-size: 16px;
+        font-weight: bolder;
+    }
+
+    #camera-frame {
+        margin: 20px 20px 20px 12px;
+        text-align: center;
+        width: 100px;
+        padding: 10px 5px;
+        background-color: rgba(14, 106, 152, 0.79);
+        border-radius: 30px;
+        border: none;
+        box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+    }
+
+    i.fas.fa-camera {
+        font-size: 30px;
+        background-color: rgba(14, 106, 152, 0.79);
+        color: rgb(255, 252, 253);
+        border-radius: 20%;
+        margin: 0px;
+        text-shadow: 0 0 -5px rgba(251, 246, 246, 1);
+    }
+
+    i.fas.fa-map-marker-alt {
+        font-size: 30px;
+        background-color: rgba(14, 106, 152, 0.79);
+        color: rgb(255, 252, 253);
+        border-radius: 20%;
+        margin: 0px;
+        text-shadow: 0 0 -5px rgba(251, 246, 246, 1);
+    }
+
+    video {
+        margin: 0px 12px;
+        /* border: 2px solid rgb(37, 112, 85); */
+        /* box-shadow: 0 0 8px rgba(251, 246, 246, 1); */
+        width: 310px;
+        height: 270px;
+    }
+
+    #get-coordinates {
+        margin: 7px 20px 0px 15px;
+        text-align: center;
+        width: 100px;
+        height: 50px;
+        padding: 8px 5px 8px 5px;
+        background-color: rgba(14, 106, 152, 0.79);
+        border-radius: 30px;
+        border: none;
+        box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+    }
+
+    #canvas {
+        margin: 0px 12px;
+        /* border: 2px solid rgb(37, 112, 85); */
+        /* box-shadow: 0 0 8px rgba(251, 246, 246, 1); */
+        width: 310px;
+        height: 270px;
+    }
+
+    form {
+        display: flex;
+        flex-flow: row wrap;
+        width: 271px;
+        box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+        height: 150px;
+        margin: 0px;
+        padding: 5px 0px 18px 0px;
+        border-radius: 8px;
+        justify-content: center;
+    }
+
+    input {
+        border-radius: 8px;
+        border: none;
+        box-shadow: 0 0 8px rgba(251, 246, 246, 1);
+        height: 25px;
+        margin: 10px 5px 0px 5px;
+        padding: 0px;
+        text-align: center;
+        width: 150px;
+    }
+
+    #picture-taken {
+        margin: 5px 0px 5px 0px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 1;
+        width: 0;
+        height: 100%;
+        opacity: 0;
+    }
+
+    #image-taken {
+        height: 30px;
+        margin: 5px 0px 5px 0px;
+        position: relative;
+        display: inline-block;
+    }
+}

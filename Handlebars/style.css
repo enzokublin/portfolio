@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: rgb(245, 247, 250);
+}
+
+body {
+    background-color: rgb(119, 140, 134);
+}
+
+header {
+    margin: 0px;
+    padding: 0px;
+    height: 60px;
+    background-color: rgb(19, 103, 138);
+    box-shadow: 4px 4px;
+    border: 2px solid black;
+}
+
+h1 {
+    margin: 20px 0px 0px 50px;
+    padding: 0px;
+    width: 175px;
+    height: 0px;
+    /* background-color: none; */
+}
+
+main {
+    margin: 0px;
+    padding: 0px;
+    width: 70%;
+    height: 400px;
+}
+
+#literature-box {
+    margin: 30px 28px 0px 28px;
+    padding: 0px;
+    /* width: 1000px; */
+    display: flex;
+}
+
+li {
+    margin: 5px;
+    padding: 2px 0px 0px 10px;
+    list-style: none;
+    width: 1060px;
+    /* height: 20px; */
+}
+
+ul {
+    margin: 5px;
+    align-content: center;
+    /* height: 40px; */
+    /* background-color: none; */
+}
+
+.author {
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 10px;
+    font-weight: bold;
+    background-color: rgb(19, 103, 138);
+    border-radius: 20px 20px 20px 20px;
+    width: 1080px;
+    box-shadow: 2px 2px;
+    border: 1px solid black;
+}
+
+.selectedWritings {
+    margin: 20px;
+    padding: 5px;
+}
+
+.quoteAndPhoto {
+    margin: 20px;
+    padding: 5px;
+    width: 400px;
+}

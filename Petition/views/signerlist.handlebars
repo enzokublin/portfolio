@@ -1,0 +1,32 @@
+<div class="view">
+
+    {{>petContainer}}
+
+    <p id="psignerlist">We who signed this petition demand the immediate prohibition of wearing sandals in combination with socks in public places by all nations.</p>
+
+<p>{{messageSignertories}}</p>
+
+<ul class="signatories">
+    {{#each signaturelist}}
+    {{#if url}}
+
+    <p>
+        <a href="{{url}}">
+        <span class="names">{{firstname}} {{lastname}}</span></a>
+        <span class="age">{{age}}</span>
+        <a href="/signerlist/{{city}}">
+        <span class="city">{{ city}}</span></a>
+    </p>
+</ul>
+    {{else}}
+
+    <p id="signListOutput">
+        <span class="names">{{firstname}} {{lastname}}</span>
+        <span class="age">{{age}}</span>
+        <a href="/signerlist/{{city}}">{{city}}</a>
+    </p>
+
+    {{/if}}
+    {{/each}}
+</ul>
+</div>

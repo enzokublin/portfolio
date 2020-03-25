@@ -1,0 +1,18 @@
+<div class="view">
+
+{{>petContainer}}
+
+<p id="registerUser">A world in which people don't commit such an outrage and don't wear sandals in combination of socks is whitin our reach. Everything what it takes, is you just signing this petition. So, join our campaign today and we will have a great world again!!! </p>
+
+    <form method="post">
+        First Name:<input id="regFirName" placeholder="firstname" class="firstName" type="text" name="firstname" ><br />
+        Last Name: <input id="reglasName" placeholder="lastname"class="lastName" type="text" name="lastname"><br />
+        E-Mail: <input id="regEMail" placeholder="email" class="email" type="text" name="email"><br />
+        Password: <input id="regPasWord"placeholder="password" class="pw" type="password" name="password"><br />
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <button id="signUp">Submit</button>
+    </form>
+
+    <p id="registerUserLink">If you have already signed this petition, please proceed with <a href="/login">log in</a>.</p>
+
+</div>

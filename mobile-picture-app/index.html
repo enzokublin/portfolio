@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Vue mobile App</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <header><h1>My picture App</h1></header>
+        <div id="vue-app">
+            <!-- <div id="picture-box"> -->
+            <video id="camera-lens" ref="camera" autoplay></video>
+            <canvas ref="canvasElement" id="canvas"></canvas>
+            <!-- </div> -->
+            <div id="primary-box">
+                <button id="camera-frame">
+                    <i
+                        @click="takeAPicture"
+                        id="camera-button"
+                        class="fas fa-camera"
+                    ></i>
+                </button>
+                <div ref="pictureTakenHere" id="image-taken">
+                    <input
+                        type="file"
+                        ref="pictureTaken"
+                        accept="image/*"
+                        id="picture-taken"
+                    />
+                </div>
+                <form action="">
+                    <input
+                        v-model="position.latitude"
+                        type="text"
+                        placeholder="coordinates"
+                    />
+                    <input
+                        v-model="position.longitude"
+                        type="text"
+                        placeholder="coordinates"
+                    />
+                    <div id="get-coordinates" >
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer><p>Developed by Enzo Kublin</p></footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="app.js" charset="utf-8"></script>
+    </body>
+</html>

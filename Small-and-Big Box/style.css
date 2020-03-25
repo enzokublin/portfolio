@@ -1,0 +1,18 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#bigbox {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    margin: 250px;
+}
+
+.smallbox {
+    width: 50px;
+    height: 50px;
+    background-color: darkred;
+    margin: 100px;
+}
